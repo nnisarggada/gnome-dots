@@ -11,7 +11,7 @@ else
 	yay
 fi
 
-programs=("github-cli" "papirus-icon-theme" "unzip" "zip" "firefox" "zsh" "alacritty" "htop" "neofetch" "ntfs-3g" "udisks2" "udiskie" "gvfs" "ttf-ms-fonts" "neovim" "nodejs" "npm" "lua" "ttf-joypixels" "ttf-jetbrains-mono-nerd" "python-pip" "mlocate" "zsh-syntax-highlighting" "noto-fonts-emoji" "bibata-cursor-theme" "mission-center")
+programs=("gdm-settings" "github-cli" "papirus-icon-theme" "unzip" "zip" "firefox" "zsh" "alacritty" "htop" "neofetch" "ntfs-3g" "udisks2" "udiskie" "gvfs" "ttf-ms-fonts" "neovim" "nodejs" "npm" "lua" "ttf-joypixels" "ttf-jetbrains-mono-nerd" "python-pip" "mlocate" "zsh-syntax-highlighting" "noto-fonts-emoji" "bibata-cursor-theme" "mission-center")
 
 for program in "${programs[@]}"; do
 	if ! yay -Q "$program" >/dev/null 2>&1; then
