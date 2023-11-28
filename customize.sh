@@ -21,12 +21,14 @@ gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>n']"
 for i in {1..9}; do
 	gsettings set org.gnome.shell.keybindings switch-to-application-$i "[]"
 done
-for i in {1..4}; do
+for i in {1..9}; do
 	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-$i "['<Super>$i']"
 done
-for i in {1..4}; do
+gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-10 "['<Super>0']"
+for i in {1..9}; do
 	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-$i "['<Super><Shift>$i']"
 done
+gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Super><Shift>0']"
 
 gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/browser/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/']"
 
