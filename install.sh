@@ -23,14 +23,9 @@ for program in "${programs[@]}"; do
 	fi
 done
 
-#Extensions
-git clone https://github.com/Tudmotu/gnome-shell-extension-clipboard-indicator.git ~/.local/share/gnome-shell/extensions/clipboard-indicator@tudmotu.com
-cd ~/
-git clone https://github.com/aunetx/blur-my-shell
-cd blur-my-shell
-make install
-gnome-extensions install -f build/blur-my-shell@aunetx.shell-extension.zip
-cd ~/
+sudo cp -r .config ~/
+sudo cp -r .local ~/
+sudo cp .zshrc ~/
 
 sudo chown $USER ~/ -R
 chsh -s /usr/bin/zsh

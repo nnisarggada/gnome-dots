@@ -44,5 +44,4 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ter
 
 #Extensions
 gnome-extensions enable blur-my-shell@aunetx
-rm -rf ~/blur-my-shell
 gnome-extensions enable clipboard-indicator@tudmotu.com
