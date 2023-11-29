@@ -23,6 +23,7 @@ for program in "${programs[@]}"; do
 	fi
 done
 
+sudo cp -r Pictures ~/
 sudo cp -r .config ~/
 sudo cp -r .local ~/
 sudo cp .zshrc ~/
