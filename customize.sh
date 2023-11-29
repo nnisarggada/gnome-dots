@@ -2,6 +2,7 @@
 
 # Appearance
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface gtk-theme 'Colloid-Dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'
 gsettings set org.gnome.desktop.interface icon-theme 'ePapirus-Dark'
 gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/gnome/blobs-d.svg'
