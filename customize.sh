@@ -5,10 +5,13 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface gtk-theme 'Colloid-Dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'
 gsettings set org.gnome.desktop.interface icon-theme 'ePapirus-Dark'
-gsettings set org.gnome.desktop.background picture-uri-dark 'file:///usr/share/backgrounds/gnome/blobs-d.svg'
+gsettings set org.gnome.desktop.background picture-uri-dark 'file:///home/nnisarggada/Pictures/Wallpapers/purple-astronaut.png'
 gsettings set org.gnome.shell favorite-apps "[]"
 
 #Keybinds
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
+
+gsettings set org.gnome.desktop.input-sources xkb-options "['caps:backspace']"
 gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Super>m']"
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>f']"
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
@@ -46,6 +49,8 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ter
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/binding "'<Super>return'"
 
 #Extensions
+gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
 gnome-extensions enable blur-my-shell@aunetx
 gnome-extensions enable clipboard-indicator@tudmotu.com
-gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
+gnome-extensions enable color-picker@tuberry
+gnome-extensions enable gsconnect@andyholmes.github.io
