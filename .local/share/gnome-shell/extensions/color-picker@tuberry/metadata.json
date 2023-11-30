@@ -1,0 +1,12 @@
+{
+  "name": "Color Picker",
+  "description": "Simple color picker for gnome shell\n\nFor support, please report any issues via the homepage link below.",
+  "gettext-domain": "gnome-shell-extension-color-picker",
+  "settings-schema": "org.gnome.shell.extensions.color-picker",
+  "uuid": "color-picker@tuberry",
+  "shell-version": [
+    "45"
+  ],
+  "url": "https://github.com/tuberry/color-picker",
+  "version": 39
+}
