@@ -4,7 +4,7 @@
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface gtk-theme 'Colloid-Dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'
-gsettings set org.gnome.desktop.interface icon-theme 'ePapirus-Dark'
+gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 gsettings set org.gnome.desktop.background picture-uri-dark 'file:///home/nnisarggada/Pictures/Wallpapers/purple-astronaut.png'
 gsettings set org.gnome.shell favorite-apps "[]"
 
@@ -41,7 +41,7 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/bro
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/browser/binding "'<Super>b'"
 
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files/name "'Files'"
-dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files/command "'nautilus'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files/command "'nautilus -w'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files/binding "'<Super>e'"
 
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/name "'Terminal'"
