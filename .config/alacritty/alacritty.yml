@@ -5,7 +5,7 @@ window:
   class:
     instance: Alacritty
     general: Alacritty
-  opacity: 1
+  opacity: 0.75
 
 scrolling:
   history: 10000
@@ -29,31 +29,28 @@ draw_bold_text_with_bright_colors: true
 
 live_config_reload: true
 
-# Colors (Ayu Dark)
 colors:
-  # Default colors
   primary:
-    background: '0x0f1419'
-    foreground: '0xe6e1cf'
-
-  # Normal colors
+    background: "#000000"
+    foreground: "#cad5ff"
+  cursor:
+    text: "#cad5ff"
+    cursor: "#cad5ff"
   normal:
-    black:   '0x000000'
-    red:     '0xf34a4a'
-    green:   '0xbae67e'
-    yellow:  '0xffee99'
-    blue:    '0x73d0ff'
-    magenta: '0xd4bfff'
-    cyan:    '0x83CEC6'
-    white:   '0xf2f2f2'
-
-  # Bright colors
+    black: "#080D13"
+    red: "#A29CA7"
+    green: "#AEABB5"
+    yellow: "#BBB9C3"
+    blue: "#BFBDC4"
+    magenta: "#C3BCC5"
+    cyan: "#CFCBD0"
+    white: "#e7e5e6"
   bright:
-    black:   '0x737d87'
-    red:     '0xff3333'
-    green:   '0xc2d94c'
-    yellow:  '0xe7c547'
-    blue:    '0x59c2ff'
-    magenta: '0xb77ee0'
-    cyan:    '0x5ccfe6'
-    white:   '0xffffff'
+    black: "#a1a0a1"
+    red: "#A29CA7"
+    green: "#AEABB5"
+    yellow: "#BBB9C3"
+    blue: "#BFBDC4"
+    magenta: "#C3BCC5"
+    cyan: "#CFCBD0"
+    white: "#e7e5e6"

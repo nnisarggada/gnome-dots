@@ -23,14 +23,14 @@ gsettings set org.gnome.shell.keybindings toggle-quick-settings "['<Super>a']"
 gsettings set org.gnome.shell.keybindings toggle-message-tray "['<Super>n']"
 
 for i in {1..9}; do
-    gsettings set org.gnome.shell.keybindings switch-to-application-$i "[]"
+	gsettings set org.gnome.shell.keybindings switch-to-application-$i "[]"
 done
 for i in {1..9}; do
-    gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-$i "['<Super>$i']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-$i "['<Super>$i']"
 done
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-10 "['<Super>0']"
 for i in {1..9}; do
-    gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-$i "['<Super><Shift>$i']"
+	gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-$i "['<Super><Shift>$i']"
 done
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Super><Shift>0']"
 
@@ -49,7 +49,7 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ter
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/binding "'<Super>return'"
 
 #Extensions
-gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
 gnome-extensions enable blur-my-shell@aunetx
 gnome-extensions enable clipboard-indicator@tudmotu.com
 gnome-extensions enable color-picker@tuberry
+gnome-extensions enable dash-to-panel@jderose9.github.com
