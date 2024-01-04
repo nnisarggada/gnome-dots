@@ -52,4 +52,4 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ter
 gnome-extensions enable blur-my-shell@aunetx
 gnome-extensions enable clipboard-indicator@tudmotu.com
 gnome-extensions enable color-picker@tuberry
-gnome-extensions enable dash-to-panel@jderose9.github.com
+gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
