@@ -1,10 +1,17 @@
 #!/bin/bash
 
 # Appearance
+gsettings set org.gnome.desktop.interface clock-format '12h'
+gsettings set org.gnome.desktop.interface clock-show-date true
+gsettings set org.gnome.desktop.interface clock-show-weekday true
 gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
-gsettings set org.gnome.desktop.interface gtk-theme 'Colloid-Dark'
 gsettings set org.gnome.desktop.interface cursor-theme 'Bibata-Modern-Classic'
+gsettings set org.gnome.desktop.interface document-font-name 'Cantarell 12'
+gsettings set org.gnome.desktop.interface font-name 'Cantarell 12'
+gsettings set org.gnome.desktop.interface monospace-font-name 'Source Code Pro 12'
+gsettings set org.gnome.desktop.interface gtk-theme 'Colloid-Dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
+gsettings set org.gnome.desktop.interface show-battery-percentage true
 gsettings set org.gnome.desktop.background picture-uri-dark 'file:///home/nnisarggada/Pictures/Wallpapers/purple-astronaut.png'
 gsettings set org.gnome.shell favorite-apps "[]"
 
@@ -53,3 +60,6 @@ gnome-extensions enable blur-my-shell@aunetx
 gnome-extensions enable clipboard-indicator@tudmotu.com
 gnome-extensions enable color-picker@tuberry
 gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
+
+# Default apps
+gsettings set org.gnome.desktop.default-applications.terminal exec 'alacritty'
