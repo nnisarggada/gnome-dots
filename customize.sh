@@ -12,7 +12,7 @@ gsettings set org.gnome.desktop.interface monospace-font-name 'Source Code Pro 1
 gsettings set org.gnome.desktop.interface gtk-theme 'Colloid-Dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Papirus-Dark'
 gsettings set org.gnome.desktop.interface show-battery-percentage true
-gsettings set org.gnome.desktop.background picture-uri-dark 'file:///home/nnisarggada/Pictures/Wallpapers/purple-astronaut.png'
+gsettings set org.gnome.desktop.background picture-uri-dark "file:///home/${USER}/Pictures/Wallpapers/purple-astronaut.png"
 gsettings set org.gnome.shell favorite-apps "[]"
 
 #Keybinds
@@ -58,8 +58,12 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ter
 #Extensions
 gnome-extensions enable blur-my-shell@aunetx
 gnome-extensions enable clipboard-indicator@tudmotu.com
+gsettings set org.gnome.shell.extensions.color-picker color-picker-shortcut "['<Super><Shift>C']"
 gnome-extensions enable color-picker@tuberry
+gsettings set org.gnome.shell.extensions.clipboard-indicator toggle-menu "['<Super>V']"
 gnome-extensions enable appindicatorsupport@rgcjonas.gmail.com
+gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+gsettings set org.gnome.shell.extensions.user-theme name "Colloid-Dark"
 
 # Default apps
 gsettings set org.gnome.desktop.default-applications.terminal exec 'alacritty'
