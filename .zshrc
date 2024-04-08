@@ -81,7 +81,6 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-cat ~/.cache/wal/sequences
 setopt autocd
 
 alias ls='ls --color=auto'
