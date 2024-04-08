@@ -1,8 +1,6 @@
-# Luke's config for the Zoomer Shell
-
 # Enable colors and change prompt:
 autoload -U colors && colors
-PS1="%B%{$fg[magenta]%}[%{$fg[magenta]%}%n%{$fg[magenta]%}@%{$fg[magenta]%}%M %{$fg[magenta]%}%~%{$fg[magenta]%}]%{$reset_color%}%b "
+PS1="%B%{$fg[magenta]%}%~%{$fg[red]%} >%{$reset_color%}%b "
 
 # History in cache directory:
 HISTSIZE=10000
@@ -74,3 +72,19 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 #My config
 export PATH=$HOME/.local/bin:$PATH
+
+# pnpm
+export PNPM_HOME="/home/nnisarggada/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+cat ~/.cache/wal/sequences
+setopt autocd
+
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias gc='better-commits'
+alias pn='pocketnaut'
