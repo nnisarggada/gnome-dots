@@ -4,32 +4,32 @@ live_config_reload = true
 draw_bold_text_with_bright_colors = true
 
 [colors.bright]
-black = "#a1a0a1"
-blue = "#BFBDC4"
-cyan = "#CFCBD0"
-green = "#AEABB5"
-magenta = "#C3BCC5"
-red = "#A29CA7"
-white = "#e7e5e6"
-yellow = "#BBB9C3"
+black = '0x9ea7b3'
+red = '0xffb1af'
+green = '0x4ae168'
+yellow = '0xf7c843'
+blue = '0x91cbff'
+magenta = '0xcb9eff'
+cyan = '0x39c5cf'
+white = '0xd9dee3'
 
 [colors.cursor]
-cursor = "#cad5ff"
-text = "#cad5ff"
+text = '0x0a0c10'
+cursor = '0xf0f3f6'
 
 [colors.normal]
-black = "#080D13"
-blue = "#BFBDC4"
-cyan = "#CFCBD0"
-green = "#AEABB5"
-magenta = "#C3BCC5"
-red = "#A29CA7"
-white = "#e7e5e6"
-yellow = "#BBB9C3"
+black = '0x7a828e'
+red = '0xff9492'
+green = '0x26cd4d'
+yellow = '0xf0b72f'
+blue = '0x71b7ff'
+magenta = '0xcb9eff'
+cyan = '0x39c5cf'
+white = '0xd9dee3'
 
 [colors.primary]
-background = "#000000"
-foreground = "#cad5ff"
+background = '0x0a0c10'
+foreground = '0xf0f3f6'
 
 [font]
 size = 12
@@ -55,7 +55,7 @@ history = 10000
 multiplier = 3
 
 [window]
-opacity = 0.8
+opacity = 1
 
 [window.class]
 general = "Alacritty"
