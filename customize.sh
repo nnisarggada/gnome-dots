@@ -41,7 +41,7 @@ for i in {1..9}; do
 done
 gsettings set org.gnome.desktop.wm.keybindings move-to-workspace-10 "['<Super><Shift>0']"
 
-gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/browser/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys custom-keybindings "['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/browser/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/files/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/micmute/']"
 
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/browser/name "'Browser'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/browser/command "'firefox'"
@@ -54,6 +54,10 @@ dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/fil
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/name "'Terminal'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/command "'alacritty'"
 dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/terminal/binding "'<Super>return'"
+
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/micmute/name "'Toggle Mic Mute'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/micmute/command "'pactl set-source-mute @DEFAULT_SOURCE@ toggle'"
+dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/micmute/binding "'<Super><Shift>M'"
 
 #Extensions
 gnome-extensions enable blur-my-shell@aunetx
