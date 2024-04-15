@@ -43,7 +43,7 @@ vim.opt.smartcase = true
 vim.opt.signcolumn = "yes"
 
 -- Decrease update time
-vim.opt.updatetime = 250
+vim.opt.updatetime = 100
 
 -- Decrease mapped sequence wait time
 -- Displays which-key popup sooner
@@ -542,7 +542,7 @@ require("lazy").setup({
 				-- languages here or re-enable it for the disabled ones.
 				local disable_filetypes = { c = true, cpp = true }
 				return {
-					timeout_ms = 500,
+					timeout_ms = 1000,
 					lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
 				}
 			end,
@@ -698,7 +698,7 @@ require("lazy").setup({
 			--  - va)  - [V]isually select [A]round [)]paren
 			--  - yinq - [Y]ank [I]nside [N]ext [']quote
 			--  - ci'  - [C]hange [I]nside [']quote
-			require("mini.ai").setup({ n_lines = 500 })
+			require("mini.ai").setup({ n_lines = 1000 })
 
 			-- Add/delete/replace surroundings (brackets, quotes, etc.)
 			--
@@ -770,8 +770,13 @@ require("lazy").setup({
 	-- Colorizer
 	{ "chrisbra/Colorizer" },
 
-	-- Codeium
-	{ "Exafunction/codeium.vim" },
+	{ -- Codeium
+
+		"Exafunction/codeium.vim",
+		config = function()
+			require("codeium").setup({})
+		end,
+	},
 
 	-- Higlight undo
 	{
@@ -851,3 +856,24 @@ require("lazy").setup({
 		},
 	},
 })
+
+if vim.g.neovide then
+	vim.keymap.set("i", "<C-v>", "<C-R>+")
+	vim.keymap.set("i", "<C-S-v>", "<C-R>+")
+
+	vim.g.neovide_padding_bottom = 10
+	vim.g.neovide_padding_right = 10
+	vim.g.neovide_padding_left = 10
+
+	vim.g.neovide_fullscreen = true
+
+	vim.g.neovide_hide_mouse_when_typing = true
+
+	vim.g.neovide_cursor_antialiasing = true
+
+	vim.g.neovide_cursor_trail_size = 0.8
+
+	vim.g.neovide_cursor_animate_command_line = true
+
+	vim.g.neovide_cursor_vfx_mode = "railgun"
+end
