@@ -19,6 +19,7 @@ gsettings set org.gnome.shell favorite-apps "[]"
 gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
 
 gsettings set org.gnome.desktop.input-sources xkb-options "['caps:backspace']"
+gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Super>d']"
 gsettings set org.gnome.desktop.wm.keybindings toggle-maximized "['<Super>m']"
 gsettings set org.gnome.desktop.wm.keybindings toggle-fullscreen "['<Super>f']"
 gsettings set org.gnome.desktop.wm.keybindings close "['<Super>q']"
