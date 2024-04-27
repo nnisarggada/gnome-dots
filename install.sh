@@ -11,7 +11,7 @@ else
 	yay
 fi
 
-programs=("xdotool" "silicon" "ripgrep" "nvidia" "nvidia-utils" "lib32-nvidia-utils""wl-clipboard" "xclip" "gnome-shell-extension-appindicator" "gnome-shell-extension-blur-my-shell" "gnome-shell-extension-clipboard-indicator" "gpick" "gdm-settings" "github-cli" "papirus-icon-theme" "unzip" "zip" "firefox" "zsh" "alacritty" "htop" "neofetch" "ntfs-3g" "udisks2" "udiskie" "gvfs" "ttf-ms-fonts" "neovim" "nodejs" "npm" "lua" "ttf-joypixels" "ttf-jetbrains-mono-nerd" "python-pip" "mlocate" "zsh-syntax-highlighting" "noto-fonts-emoji" "bibata-cursor-theme" "colloid-gtk-theme-git")
+programs=("xdotool" "silicon" "ripgrep" "nvidia" "nvidia-utils" "lib32-nvidia-utils""wl-clipboard" "xclip" "gnome-shell-extension-appindicator" "gnome-shell-extension-blur-my-shell" "gnome-shell-extension-clipboard-indicator" "gnome-shell-extension-compiz-windows-effect-git" "gpick" "gdm-settings" "github-cli" "papirus-icon-theme" "unzip" "zip" "firefox" "zsh" "alacritty" "htop" "neofetch" "ntfs-3g" "udisks2" "udiskie" "gvfs" "ttf-ms-fonts" "neovim" "nodejs" "npm" "lua" "ttf-joypixels" "ttf-jetbrains-mono-nerd" "python-pip" "mlocate" "zsh-syntax-highlighting" "noto-fonts-emoji" "bibata-cursor-theme" "colloid-gtk-theme-git")
 
 for program in "${programs[@]}"; do
 	if ! yay -Q "$program" >/dev/null 2>&1; then
